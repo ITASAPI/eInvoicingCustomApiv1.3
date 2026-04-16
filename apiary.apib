@@ -47,7 +47,9 @@ VERSION: 1.1
     <br />
     <b>Invoice Record Leg Additional Properties</b>:
     <br />
-    DocumentReference, InvoiceCurrencyCode, PhysicalTradeId, ValueType, CostHeadingCode
+    DocumentReference, InvoiceCurrencyCode, PhysicalTradeId, ValueType, CostHeadingCode,
+    <br />
+    CostUniqueId, VatAmount
     <br />
     <b>Invoice Vat Record Additional Properties</b>:
     <br />
@@ -416,6 +418,8 @@ A multipurpose object which can be used by several endpoints and with multiple s
 |DocumentReference|Document Reference|`string`|9|||
 |InvoiceCurrencyCode|Invoice Currency Code|`string`|3|||
 |PhysicalTradeId|Physical Trade Id|`string`|10|||
+|CostUniqueId|Cost Unique Id|`number`||||
+|VatAmount|Cost Unique Id|`number`||||
 
 
 <br /><br />
@@ -446,6 +450,8 @@ A multipurpose object which can be used by several endpoints and with multiple s
 |DocumentReference|Document Reference|`string`|9|||
 |InvoiceCurrencyCode|Invoice Currency Code|`string`|3|||
 |PhysicalTradeId|Physical Trade Id|`string`|10|||
+|CostUniqueId|Cost Unique Id|`number`||||
+|VatAmount|Cost Unique Id|`number`||||
 
 + Response 200 (application/json; charset=utf-8)
 + Attributes (InvoiceUpdateLeg1Create)
@@ -659,6 +665,8 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + DocumentReference: SI2600001 (string)
 + InvoiceCurrencyCode: GBP (string)
 + PhysicalTradeId: S00001.001 (string)
++ CostUniqueId: 1 (number)
++ VatAmount: 441 (number)
 
 ## InvoiceLeg2Create (object)
 + Quantity: 200.00 (required, number)
@@ -682,6 +690,8 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + DocumentReference: SI2600001 (string)
 + InvoiceCurrencyCode: GBP (string)
 + PhysicalTradeId: S00001.001 (string)
++ CostUniqueId: 2 (number)
++ VatAmount: 2400 (number)
 
 ## InvoiceCreateVat1 (object)
 + ExternalVatCode: S5 (string)
@@ -836,6 +846,8 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + DocumentReference: SI2600001 (string)
 + InvoiceCurrencyCode: GBP (string)
 + PhysicalTradeId: S00001.001 (string)
++ CostUniqueId: 1 (number)
++ VatAmount: 441 (number)
 
 
 ## InvoiceReadLeg2 (object)
@@ -862,6 +874,8 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + DocumentReference: SI2600001 (string)
 + InvoiceCurrencyCode: GBP (string)
 + PhysicalTradeId: S00001.001 (string)
++ CostUniqueId: 2 (number)
++ VatAmount: 4800 (number)
 
 ## InvoiceReadVat1 (object)
 + InvoiceRecordId: 1 (number)
@@ -913,6 +927,8 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + DocumentReference: SI2600001 (string)
 + InvoiceCurrencyCode: GBP (string)
 + PhysicalTradeId: S00001.001 (string)
++ CostUniqueId: 1 (number)
++ VatAmount: 4400 (number)
 
 ## InvoiceUpdateLeg2Create (object)
 + InvoiceRecordId: 1 (required, number)
@@ -938,6 +954,8 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + DocumentReference: SI2600001 (string)
 + InvoiceCurrencyCode: GBP (string)
 + PhysicalTradeId: S00001.001 (string)
++ CostUniqueId: 2 (number)
++ VatAmount: 4410 (number)
 
 
 ## Pagination (object)
